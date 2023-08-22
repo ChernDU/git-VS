@@ -32,7 +32,7 @@
     border: 0 solid silver;
     height: 80.8vh;
     text-align: center;
-    background-image: url('/img/logo.jpg');
+    background-image: url('../img/logo.jpg');
     background-size: cover;
 }
 
