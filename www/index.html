@@ -6,114 +6,25 @@
     <meta name="keywords" content="site, website">
     <meta name="description" content="Электронная версия игры 'Все свои'">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> -->
-    <link href="css/all.min.css" rel="stylesheet">
     <title>Все свои. Web 2.0</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
     </style>
 </head>
 <body>
-    <div id="wrapper">
-        <div id="content">
-            <header>
-                <div class="flex-cont">
-                <div class="box" id="info">
-                    <div>
-                        <button href="info.html" class="button" id="infoBtn"><span class="txtBtn"><a href="" title="Информация">Информация</a></span></button>
-                    </div>
-                </div>
-                <div class="box" id="vs">
-                    <div>
-                        <h1 id="VS">Все Cвои. Web 2.0</h1>
-                        <div class="box" id="slogan">
-                            <div>
-                                <span id="slogan" class="slogan">Цифровая версия турнира</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="box" id="auth">
-                    <div>
-                        <button href="auth.html" class="button" id="authBtn"><span class="txtBtn"><a href="" title="Регистрация">Регистрация</a></span></button>
-                    </div>
-                </div>
-                </div>
-            </header>
-            <nav>
-                <div id="menuShow"><i class="fa-solid fa-bars"></i></div>
-                <div id="hideMenu"></div>
-                    <div id="mobileMenu">
-                        <a href="">Информация</a>
-                        <a href="">Регистрация</a>
-                    </div>
-            </nav>
-        </div>
-            <div id="img">
-                <!-- <img src="img/logo.jpg" alt=""> -->
-                <!-- <button href="enter.html" class="button" id="inBtn">
-                    <span class="txtBtn">
-                        <a href="" title="Вход">Войти</a>
-                    </span>
-                </button>
-                <div id="clear"><br></div>
-                <span id="txtInBtn">Уже есть аккаунт? Готов обыграть Всех Своих?
-                </span> -->
-            </div>
-        <footer>    
-            <div class="flex-cont">
-                <div id="rights">
-                    <span>Все права защищены &copy; 2023</span>
-                </div>
-                <div id="clear"></div>
-                <div id="social">
-                    <a href="https://www.sport-express.ru/" title="Ссылка на страницу 'Спорт-экспресс'" target="_blank"><i class="fa-solid fa-trophy"></i></a>
-                </div>
-            </div>
-        </footer>
+    <header>
+        <button href="info.html" class="button" id="infoBtn"><span class="txtBtn">Информация</span></button>
+        <h1 id="name">Все Cвои. Web 2.0</h1>
+        <button href="auth.html" class="button" id="authBtn"><span class="txtBtn">Регистрация</span></button><br>
+        <span id="slogan" class="slogan">Цифровая версия турнира</span><br>
+    </header>
+    <div class="main">
+        <button href="enter.html" class="button" id="inBtn"><span class="txtBtn">Войти</span></button>
+        <span id="txtDown" class="slogan">Уже есть аккаунт? Готов обыграть Всех Своих?</span>
     </div>
-    <!-- Подключаем jQuerry -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <script>
-        $('#menuShow').click (function() {
-            if ($('#mobileMenu').is(':visible'))
-                $('#mobileMenu').hide();
-            else 
-                $('#mobileMenu').show();
-        });
-    
-        // $(document).scroll (function () {
-        //     if ($(document).width () > 785) {
-        //         if($(document).scrollTop() > $('header').height () + 10)
-        //             $('nav').addClass ('fixed');
-        //         else
-        //             $('nav').removeClass ('fixed');
-        //     }
-        // });
-    
-        window.onresize = function (event) {
-            $('#mobileMenu').hide();
-        };
-    </script>
+    <!-- <footer>
+        <span class="center">Все права защищены &copy; 2023</span>
+    </footer>    -->
 </body>
 </html>
-
-
-
-
-<!-- <div id="mobileMenu">
-    <div class="icon-menu">
-        <i class="fa-solid fa-bars"></i>
-    </div>
-</div> -->
-
-<!-- #mobileMenu {
-    font-family: Montserrat,sans-serif;
-    font-weight: 300;
-    font-size: 1rem;
-    color: #232323;
-    padding: 0;
-    margin: 0;
-    outline: none;
-} -->
