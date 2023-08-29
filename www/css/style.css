@@ -274,20 +274,20 @@ a:active {color: rgb(15, 153, 153)}
 
 @media(max-width: 1024px) and (min-width: 768px){
 #img {
-    background-image: url('/.../www/img/logo-laptop.svg'); 
+    background-image: url('https://raw.githubusercontent.com/ChernDU/git-VS/03e8136f3aff1aef0ab2ee458275111fada3ada0/www/img/logo-laptop.svg'); 
 }
 }
 
 
 @media(max-width: 767px) and (min-width: 425px){
 #img {
-    background-image: url('/.../www/img/logo-tablet.svg'); 
+    background-image: url('https://raw.githubusercontent.com/ChernDU/git-VS/03e8136f3aff1aef0ab2ee458275111fada3ada0/www/img/logo-tablet.svg'); 
 }
 }
 
 @media(max-width: 424px) {
 #img {
-    background-image: url('/.../www/img/logo-mobile.svg'); 
+    background-image: url('https://raw.githubusercontent.com/ChernDU/git-VS/03e8136f3aff1aef0ab2ee458275111fada3ada0/www/img/logo-mobile.svg'); 
 }
 }
 /* Конец раздела адаптивность фоновой картинки */
