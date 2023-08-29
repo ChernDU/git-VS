@@ -268,26 +268,26 @@ a:active {color: rgb(15, 153, 153)}
 
 @media(min-width: 1025px) {
 #img {
-    background-image: url('/../img/logo.jpg'); 
+    background-image: url('/www/img/logo.jpg'); 
 }
 }
 
 @media(max-width: 1024px) and (min-width: 768px){
 #img {
-    background-image: url('/../img/logo-laptop.svg'); 
+    background-image: url('/www/img/logo-laptop.svg'); 
 }
 }
 
 
 @media(max-width: 767px) and (min-width: 425px){
 #img {
-    background-image: url('/../img/logo-tablet.svg'); 
+    background-image: url('/www/img/logo-tablet.svg'); 
 }
 }
 
 @media(max-width: 424px) {
 #img {
-    background-image: url('/../img/logo-mobile.svg'); 
+    background-image: url('/www/img/logo-mobile.svg'); 
 }
 }
 /* Конец раздела адаптивность фоновой картинки */
