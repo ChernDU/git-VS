@@ -268,7 +268,7 @@ a:active {color: rgb(15, 153, 153)}
 
 @media(min-width: 1025px) {
 #img {
-    background-image: url('https://github.com/ChernDU/git-VS/blob/main/www/img/logo.jpg'); 
+    background-image: url('https://github.com/ChernDU/git-VS/blob/main/www/img/logo.jpg?raw=true'); 
 }
 }
 
