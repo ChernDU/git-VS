@@ -1,0 +1,492 @@
+@charset "utf-8"
+
+/* Общие стартовые стили к странице */
+
+;* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    background: linear-gradient(180deg, #253847 0%, #070A0E 48.44%, #3F657C 100%);
+    width: 99.4%;
+    padding: 0.3%;
+    border-bottom: 5px solid #cbfdfe;
+    
+}
+
+footer {
+    background: linear-gradient(180deg, #253847 0%, #070A0E 48.44%, #3F657C 100%);
+    width: 98%;
+    padding: 1%;
+    border-top: 5px solid #cbfdfe;
+    font-family: "Russo One", sans-serif;
+}
+
+.flex-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    column-gap: 10%;
+}
+
+#grid-box {
+    display: grid;
+    height: inherit;
+    grid-template-columns: 3fr 4fr;  
+    text-align: center;
+}
+
+#g1 {
+    align-self: end;
+    margin-bottom: 20%;
+}
+
+#img {
+    height: 100%;
+    background-image: url('/img/logo.svg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+/* Конец раздела общих стилей страницы */
+
+/* Стили для кнопок */
+
+@media(min-width: 1282px) {
+#infoBtn {
+    padding: 15px 30px;
+}
+
+#authBtn {
+    padding: 15px 30px;
+}
+
+#VS { 
+    display: inline-block;
+}
+}
+
+#inBtn {
+    padding: 15px 120px;
+}
+
+.button {
+    border-radius: 20px;
+    background: #cbfdfe;
+    border: 0px solid;
+    transition: all.6s ease;
+    text-shadow: #253847 0 0 1px;
+}
+
+.button:hover {
+    background: #CADF2C;
+    transition: all.6s ease;
+    border-bottom: 2px solid #d7f0f1;
+
+}
+
+.button:active {
+    background: #CADF2C;
+    transition: all.6s ease;
+    border-bottom: 0;
+}
+
+#Copyright {
+    position: relative;
+    left: 40%;
+}
+
+/* Конец раздела стили для кнопок */
+
+/* Стили для текста */
+
+#infoBtn, #authBtn, #inBtn {
+    color: #1B2834;
+    text-align: center;
+    font-family: "Russo One", sans-serif;
+    font-size: 1.8em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#VS {
+    color: #CBFDFE;
+    text-align: center;
+    font-family: "Russo One", sans-serif;
+    font-size: 3.5em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#slogan, #txtInBtn, #Copyright {
+    color: #CADF2C;
+    text-align: center;
+    font-family: "Russo One", sans-serif;
+    font-size: 0.8em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#slogan {font-size: 1.1em}
+
+#txtInBtn {font-size: 1.1em;}
+
+a {
+    text-decoration: none;
+    color: #1B2834;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #ff5500;
+    cursor: pointer;
+    border-bottom: 1px solid #ff5500;
+}
+
+a:active {color: rgb(15, 153, 153)}
+
+/* Конец раздела стили для текста */
+
+/* Раздел адаптивность */
+/* Адаптивность шапки*/
+
+@media(max-width: 1281px) and (min-width: 856px) {
+    #infoBtn {
+    padding: 10px 20px;
+    font-size: 1.4em;
+}
+
+#authBtn {
+    padding: 10px 20px;
+    font-size: 1.4em;
+}
+
+#VS { 
+    display: inline-block;
+    font-size: 2.5em;
+}
+
+.flex-cont {column-gap: 5%}
+}
+
+@media(max-width: 855px) {
+    #infoBtn {
+    padding: 10px 20px;
+    font-size: 1.4em;
+    visibility: hidden;
+    display: none;
+}
+
+#authBtn {
+    padding: 10px 20px;
+    font-size: 1.4em;
+    visibility: hidden;
+    display: none;
+}
+
+#VS { 
+    display: inline-block;
+    font-size: 1.5em;
+}
+
+#slogan {font-size: 0.9em}
+
+.flex-cont {column-gap: 5%}
+}
+
+/* Конец раздела адаптивность шапки*/
+
+/* Адаптивность меню */
+
+@media(max-width: 855px) {
+    nav {
+        background: linear-gradient(180deg, #253847 50%, #070A0E 48.44%, #3F657C 100%);
+        width: 99.4%;
+        padding: 0.3%;
+        border-bottom: 2px solid #CBFDFE;
+        font-family: "Russo One", sans-serif;
+    }
+    
+    nav a {
+        color: #CADF2C;
+        font-size: 1.1em;
+    }
+    
+    nav a:hover {
+        color: #ff5500;
+    }
+    
+    #menuShow {
+        font-size: 1.4em;
+        margin-top: 4px;
+        cursor: pointer;
+        color:#CADF2C;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    #mobileMenu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        column-gap: 5%;
+        width: 100%;
+    }
+}
+
+/* Конец раздела адаптивность меню */
+
+/* Адаптивность фоновой картинки */
+
+@media only screen and (max-width: 767px) {   
+    #img {
+        background-image: url('/img/logo.svg');   
+    }
+}
+
+/* @media(min-width: 1025px) {
+#img {
+    background-image: url('/img/logo.jpg'); 
+}
+}
+
+@media(max-width: 1024px) and (min-width: 768px){
+#img {
+    background-image: url('/img/logo-laptop.svg'); 
+}
+}
+
+
+@media(max-width: 767px) and (min-width: 425px){
+#img {
+    background-image: url('/img/logo-tablet.svg'); 
+}
+}
+
+@media(max-width: 424px) {
+#img {
+    background-image: url('/img/logo-mobile.svg'); 
+}
+} */
+/* Конец раздела адаптивность фоновой картинки */
+
+/* Адаптивность центральной кнопки с надписью */
+
+@media(max-width: 1024px) and (min-width: 856px) {
+    #g1 {
+        align-self: end;
+        margin-bottom: 10%;
+    }
+
+    #inBtn {
+        padding: 15px 100px;
+        font-size: 1.4em;
+    }
+
+    #txtInBtn {font-size: 0.8em;}
+}
+
+@media(max-width: 855px) {
+    #grid-box {
+        grid-template-columns: 1fr;  
+        text-align: center;
+    }
+
+    #g1 {
+        align-self: end;
+        margin-bottom: 5%;
+    }
+
+    #inBtn {
+        padding: 15px 100px;
+        font-size: 1.4em;
+    }
+
+    #txtInBtn {font-size: 0.8em;}
+}
+
+/* Конец разедла адаптивность центральной кнопки с надписью */
+
+/* Адаптивность футера*/
+
+@media(max-width: 1080px) and (min-width: 856px) {
+    #rights {
+        float: left;
+        color: #CADF2C;
+        margin-top: 1px;
+        margin-left: -15%;
+        font-family: "Russo One", sans-serif;
+        font-size: 0.8em;
+    }
+    
+    #social {
+        float: right;
+        width: 20%;
+        margin-right: -15%;
+        margin-top: 5px;
+    }
+    
+    #social>a {
+        width: 15px;
+        height: 15px;
+        float: right;
+        color: #CBFDFE;
+        text-align: center;
+        line-height: 5px;  
+    }
+
+    #social>a:hover {
+        color: #CADF2C;
+        border-bottom: 0;
+    }
+}
+
+@media(max-width: 855px) {
+    #rights {
+        float: left;
+        color: #CADF2C;
+        margin-top: 1px;
+        margin-left: -8%;
+        font-family: "Russo One", sans-serif;
+        font-size: 0.7em;
+    }
+    
+    #social {
+        float: right;
+        width: 10%;
+        margin-right: -8%;
+        margin-top: 5px;
+    }
+    
+    #social>a {
+        width: 19px;
+        height: 19px;
+        float: right;
+        color: #CBFDFE;
+        text-align: center;
+        line-height: 10px;  
+    }
+
+    #social>a:hover {
+        color: #CADF2C;
+        border-bottom: 0;
+    }
+
+}
+
+/* Конец раздела адаптивность футера*/
+/* Конец раздела адаптивность */
+
+
+/* Стили для футера */
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#content {
+    flex: 1 0 auto;
+}
+
+@media(min-width: 1081px) {
+#rights {
+    float: left;
+    color: #CADF2C;
+    margin-left: -15%;
+    margin-top: 1px;
+    font-family: "Russo One", sans-serif;
+    font-size: 1em;
+}
+
+#social {
+    float: right;
+    width: 20%;
+    margin-right: -15%; 
+    margin-top: px;
+}
+
+#social>a {
+    width: 10px;
+    height: 10px;
+    float: right;
+    color: #CBFDFE;
+    text-align: center;
+    line-height: 5px;  
+}
+
+#social>a:hover {
+    color: #CADF2C;
+    border-bottom: 0;
+}
+}
+/* Конец раздела стили для футера */
+
+/* Меню сайта */
+
+@media(min-width: 856px) {
+nav {
+    background: linear-gradient(180deg, #253847 50%, #070A0E 48.44%, #3F657C 100%);
+    width: 99.4%;
+    padding: 0.3%;
+    border-bottom: 2px solid #CBFDFE;
+    font-family: "Russo One", sans-serif;
+    visibility: hidden;
+    display: none;
+}
+
+nav a {
+    color: #CADF2C;
+    font-size: 1.5em;
+}
+
+nav a:hover {
+    color: #ff5500;
+}
+
+#menuShow {
+    font-size: 1.4em;
+    margin-left: 50%;
+    margin-top: 4px;
+    cursor: pointer;
+    color:#CADF2C;
+}
+
+#mobileMenu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 5%;
+    width: 100%;
+}
+}
+
+/* Конец меню сайта */
+
+
+/* Центральное рабочее окно сайта */
+
+#clear {
+    clear: both;
+}
+
+/* Окончание раздела центральное рабочее окно сайта */
