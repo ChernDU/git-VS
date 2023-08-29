@@ -51,7 +51,7 @@ footer {
 
 #img {
     height: 100%;
-    background-image: url('/img/logo.svg'); 
+    background-image: url('https://github.com/ChernDU/git-VS/blob/main/www/img/logo.jpg?raw=true'); 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -254,12 +254,6 @@ a:active {color: rgb(15, 153, 153)}
 /* Конец раздела адаптивность меню */
 
 /* Адаптивность фоновой картинки */
-
-@media only screen and (max-width: 767px) {   
-    #img {
-        background-image: url('/img/logo.svg');   
-    }
-}
 
 /* @media(min-width: 1025px) {
 #img {
