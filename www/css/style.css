@@ -37,19 +37,22 @@ footer {
     column-gap: 10%;
 }
 
-.main {
-    /* width: 100%; */
-    text-align: center;
-    background-color: #ffebcd;
+#img {
+    max-height: 100%;
+    height: 100%;
+    width: 100%;
     /* background-image: url('/img/logo.jpg');  */
-    /* background-size: cover; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
-img {
-    width: 100%;
-    height: auto;
+/* img {
+    height: 100%;
+    z-index: 1;
     size: cover;
-}
+} */
 /* Конец раздела общих стилей страницы */
 
 /* Стили для кнопок */
@@ -68,13 +71,20 @@ img {
 }
 }
 
+@media(min-width: 1025px) {
 #inBtn {
-    padding: 15px 80px;
-    margin-right: 68%;
-    margin-top: 30%;
+    float: left;
+    padding: 15px 120px;
+    margin-left: 8%;
+    margin-top: 32%;
+    /* width: 16%; */
 }
 
-#txtInBtn {margin-right: 68.5%}
+#txtInBtn {
+    float: left;
+    margin-left: 5.5%;
+}
+}
 
 .button {
     border-radius: 20px;
@@ -137,6 +147,8 @@ img {
 }
 
 #slogan {font-size: 1.1em}
+
+#txtInBtn {font-size: 1.1em;}
 
 a {
     text-decoration: none;
@@ -228,16 +240,6 @@ a:active {color: rgb(15, 153, 153)}
         color: #ff5500;
     }
     
-    /* .fixed {
-        position: fixed;
-        top: 0;
-        opacity: 0.97;
-    }
-    
-    .fixed:hover {
-        opacity: 1;
-    } */
-    
     #menuShow {
         font-size: 1.4em;
         /* margin-left: 50%; */
@@ -262,13 +264,57 @@ a:active {color: rgb(15, 153, 153)}
 
 /* Конец раздела адаптивность меню */
 
-/* Адаптивность футера*/
+/* Адаптивность фоновой картинки */
 
-@media (max-width: 1080px) {
-    #clear {
-        clear: both;
-    }
+@media(min-width: 1025px) {
+#img {
+    background-image: url('/img/logo.jpg'); 
 }
+}
+
+@media(max-width: 1024px) and (min-width: 768px){
+#img {
+    background-image: url('/img/logo-laptop.svg'); 
+}
+}
+
+
+@media(max-width: 767px) and (min-width: 425px){
+#img {
+    background-image: url('/img/logo-tablet.svg'); 
+}
+}
+
+@media(max-width: 424px) {
+#img {
+    background-image: url('/img/logo-mobile.svg'); 
+}
+}
+/* Конец раздела адаптивность фоновой картинки */
+
+/* Адаптивность центральной кнопки с надписью */
+
+@media(max-width: 1024px) and (min-width: 856px) {
+    #inBtn {
+        float: left;
+        padding: 15px 80px;
+        margin-left: 9%;
+        margin-top: 40%;
+        /* width: 17%; */
+        font-size: 1.4em;
+    }
+    
+    #txtInBtn {
+        float: left;
+        margin-left: 5.5%;
+    }
+
+    #txtInBtn {font-size: 0.8em;}
+}
+
+/* Конец разедла адаптивность центральной кнопки с надписью */
+
+/* Адаптивность футера*/
 
 @media(max-width: 1080px) and (min-width: 856px) {
     #rights {
@@ -437,3 +483,15 @@ nav a:hover {
 }
 
 /* Конец меню сайта */
+
+
+/* Центральное рабочее окно сайта */
+
+#clear {
+    clear: both;
+}
+
+/* Окончание раздела центральное рабочее окно сайта */
+
+
+@media only screen and (max-width: 767px) {   body {     /* Здесь размер файла уменьшен на 93% чтобы  увеличить скорость загрузки страницы с мобильных устройств */     background-image: url(images/background-photo-mobile-devices.jpg);   } }
